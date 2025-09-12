@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alsanousi Faraj</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    /* خلفية النجوم المتحركة */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/9qYvqtC/stars-bg.gif') repeat;
+      opacity: 0.08;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="brand">
+      <span>Alsanousi Faraj</span>
+      <span class="badge">متـــاح</span>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-card container">
+      <img src="images/profile-small.jpg" alt="Profile" class="profile-pic" />
+      <h1 class="title">Hey, I am Alsanousi Faraj</h1>
+      <p class="subtitle">Do you want something like this?</p>
+      <p class="subtitle-2">Let's create something together!</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section card container">
+    <h2>About Me</h2>
+    <p>مطور ويب ومساعد AI. تحويل الأفكار إلى مواقع وتطبيقات تفاعلية، وأساعد العملاء على تحقيق مشاريعهم باستخدام التكنولوجيا والذكاء الاصطناعي.</p>
+    <p>البرمجة كهواية وأستمتع بمشاركة معرفتي والتعلم من المجتمعات والمنتديات الخاصة بتطوير الويب والذكاء الاصطناعي.</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills card container">
+    <h3>Skills</h3>
+    <ul class="skills-list">
+      <li>Frontend: HTML, CSS, JavaScript, React</li>
+      <li>AI Assisted Development / تطوير بمساعدة AI</li>
+      <li>تصميم واجهات جذابة وسريعة</li>
+      <li>حلول مخصصة للأفراد والشركات</li>
+    </ul>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-cards card container">
+    <h3>Services</h3>
+    <div class="service-card">
+      <h4>Personal Website</h4>
+      <p>تصميم موقع شخصي جذاب وسريع للعملاء.</p>
+    </div>
+    <div class="service-card">
+      <h4>AI Assisted Apps</h4>
+      <p>تطوير تطبيقات صغيرة باستخدام AI لتوفير حلول ذكية.</p>
+    </div>
+    <div class="service-card">
+      <h4>GitHub Projects</h4>
+      <p>مشاهدة أعمالي ومشاريعي على GitHub.</p>
+      <a href="https://github.com/AL-1988" target="_blank" class="btn">
+        <i class="fab fa-github"></i> عرض المشاريع
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="card container">
+    <h3>تواصل معي</h3>
+    <div class="links">
+      <a href="mailto:elsenussi.ea@gmail.com" class="btn" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://wa.me/218924008830" class="btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="https://t.me/00218924008830" class="btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-telegram"></i> Telegram
+      </a>
+      <a href="https://linkedin.com/in/alsanousi-faraj-66222519b" class="btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/AL-1988" class="btn" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    &copy; <span id="year"></span> Alsanousi Faraj — كل الحقوق محفوظة
+  </footer>
+
+  <script>
+    // Display current year in the footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  
+  <!-- Particles Animation -->
+  <script src="particles.js"></script>
+
+  <script>
+    // إظهار العناصر عند تحميل الصفحة
+    window.addEventListener('load', () => {
+      const elements = document.querySelectorAll('.card, .about-section, .services-cards, #contact');
+      elements.forEach(el => el.classList.add('show'));
+    });
+  </script>
+</body>
+</html>
